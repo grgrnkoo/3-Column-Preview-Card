@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    margin: 1rem;
+    width: 65%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+    height: 55vh;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1150px) {
+    .table {
+        flex-direction: column;
+    }
+    .section {
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+h1 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.5rem;
+    margin: .8rem 0 0 0;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.5);
+    line-height: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+a {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    outline: none;
+    border-radius: 2rem;  
+    margin-top: 1.2rem; 
+    font-size: inherit;
+    font-family: inherit;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: hsla(0, 0%, 95%, 0%);
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+}
+
+.orange {
+    background-color: hsl(31, 77%, 52%);
+    button {
+        color: hsl(31, 77%, 52%);
+        transition: color 0.5s;
+    }
+    button:hover {
+        color: hsl(0, 0%, 95%);
+    }
+}
+
+.cyan {
+    background-color: hsl(184, 100%, 22%);
+    button {
+        color: hsl(184, 100%, 22%);
+        transition: color 0.5s;
+    }
+    button:hover {
+        color: hsl(0, 0%, 95%);
+    }
+}
+
+.darkcyan {
+    background-color: hsl(179, 100%, 13%);
+    button {
+        color: hsl(179, 100%, 13%);
+        transition: color 0.5s;
+    }
+    button:hover {
+        color: hsl(0, 0%, 95%);
+    }
+}
